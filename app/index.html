@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sample application</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/modern.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/buttonset.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body class="metrouicss">
+    <div class="page">
+      <div class="page-header">
+        <div class="page-header-content">
+          <h1>This is Preprocessor.</h1>
+        </div>
+      </div>
+      <div class="page-region">
+        <div class="page-region-content">
+          <div class="button-set" data-role="button-set">
+            <button id="jshint_btn" class="active">jsHint</button>
+            <button id="uglify_btn">Uglify-js</button>
+            <button id="coffee_btn">CoffeeScript</button>
+            <button id="csslint_btn">csslint</button>
+            <button id="cssmin_btn">cssmin</button>
+          </div>
+          <div id="drop-area" class="bg-color-blue">
+            <h1>Drop a file here!</h1>
+          </div>
+          <div id="result-area" class="bg-color-teal"></div>
+          <button id="exit_btn" class="bg-color-red"><span class="fg-color-white">Exit</span></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
