@@ -40,6 +40,7 @@ $ ->
         alert "CSSファイルではありません"
         return
       
+    # 処理分配
     func = switch mode
       when "jshint" then do_jshint
       when "uglify" then do_uglify
@@ -148,11 +149,9 @@ $ ->
     return false
   .on "drop", (e) ->
     path = e.originalEvent.dataTransfer.files[0].path
-    filename = _path.basename path
 
     do_process path
 
-    e.preventDefault()
     return false
 
   return
